@@ -1,0 +1,596 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9cee0;
+}
+
+.content div>img {
+display: none;
+}
+
+h1 {
+    display: none
+}
+
+/* INIZIO MENUBAR */
+
+nav {
+    background-color: #90c8ee;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+#hamburger {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 55px;
+    list-style: none;
+    position: relative;
+}
+
+nav li{
+    list-style: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #964770;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav li ul {
+    display: none;
+    padding: 0;
+    width: 100%;
+    background-color: #acd7a1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+nav>ul li:hover {
+    background-color: #7d3158;
+}
+
+nav>ul li:hover>a{
+    color: #fff;
+}
+
+nav>ul li:hover ul {
+    display: block;
+}
+
+nav li li a {
+    text-transform: capitalize;
+}
+
+/* FINE MENUBAR */
+
+/* INIZIO ARTICLE  */
+
+.articolo {
+    margin: 150px auto;
+    width: 70%;
+    border: 3px solid #7d3158;
+    position: relative;
+    z-index: 0;
+    padding: 50px 50px 50px 180px;
+    border-radius: 20px;
+    background-color: #f7f5ab;
+}
+
+.articolo:last-of-type {
+    padding: 50px 180px 50px 50px;
+}
+
+.articolo:first-of-type h2 {
+    background-color: #f5a1b1;
+    margin: 0;
+    padding: 10px;
+    color: #7d3158;
+    font-size: 20px;
+    position: absolute;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    top: 0;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.articolo:last-of-type h2 {
+    background-color: #f5a1b1;
+    margin: 0;
+    padding: 10px;
+    color: #7d3158;
+    font-size: 20px;
+    position: absolute;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    top: 0;
+    left: 40px;
+    transform: translateY(-50%);
+}
+
+.articolo:first-of-type img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50% , -50%);
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+}
+
+.articolo:last-of-type img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50% , -50%);
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+}
+
+.articolo p {
+    color: #7d3158;
+}
+
+/* FINE ARTICLE */
+
+/* INIZIO ASIDE */
+
+#correlati {
+    margin: 0;
+    padding: 0;
+}
+
+#correlati h3 {
+    width: 250px;
+    background-color: #f5a1b1;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#correlati ul {
+    width: 73%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#correlati li {
+    width: calc(100% / 4 - 40px);
+    float: left;
+    height: 350px;
+    overflow: hidden;
+    list-style: none;
+    border: 3px solid #7d3158;
+    margin: 0 20px;
+    position: relative;
+}
+
+#correlati .uno {
+    background-color: #acd7a1;
+    background-image: url(../immagini/html5.png);
+    background-size: over;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#correlati .due {
+    background-color: #90c8ee;
+    background-image: url(../immagini/javascript.png);
+    background-size: over;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#correlati .tre{
+    background-color: #f7f5ab;
+    background-image: url(../immagini/php.png);
+    background-size: over;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#correlati .quattro {
+    background-color: #fcbdc9;
+    background-image: url(../immagini/responsive.png);
+    background-size: over;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#correlati a {
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #7d3158;
+    position: absolute;
+    top: 80%;
+    transition: .5s;
+}
+
+#correlati li:hover a {
+    top: 0;
+}
+
+/* FINE ASIDE */
+
+/* INIZIO FORM */
+
+#modulo {
+    clear: both;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+#modulo div {
+    background-image: url(../immagini/kawaii-pink-seamless-pattern-with-candies-repetitive-sweet-background-with-peppermint-hard-candies-and-lollipops-pastel-wallpaper-for-kids-and-babies-vector.jpg);
+    background-size: cover;
+    background-position: right;
+    margin: 150px auto;
+    width: 70%;
+    border: 3px solid #7d3158;
+    position: relative;
+    z-index: 0;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    top: 150px;
+}
+
+#modulo h2 {
+    width: 250px;
+    background-color: #f5a1b1;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    transform: translateY(-50%);
+}
+
+#modulo h3 {
+    background-color: #ffffff;
+    margin: 20px 57px;
+    padding: 10px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-bottom: 20px; */
+}
+
+#modulo ul {
+    margin: 0;
+    padding: 0;
+}
+
+#modulo ul li {
+    padding: 0 55px;
+    list-style: none;
+}
+
+#modulo ul li input {
+    display: block;
+}
+
+#modulo .uno input {
+    height: 30px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+}
+
+#modulo .due input {
+    height: 30px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+}
+
+#modulo .tre textarea {
+    width: 100%;
+    height: 150px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+    display: block;
+}
+
+#modulo .quattro input {
+    background-color: #f5a1b1;
+    height: 30px;
+    border: 3px solid #7d3158;
+    border-radius: 10px;
+    color: #7d3158;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#modulo .quattro input:hover {
+    background-color: #fff;
+}
+
+#modulo label {
+    font-size: 20dpx;
+    font-weight: bold;
+    color: #7d3158;
+}
+
+/* FINE FORM */
+
+/* INIZIO SPONSOR */
+
+#sponsor {
+    background-color: #7d3158;
+    height: 180px;
+}
+
+#sponsor h3 {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#sponsor ul {
+    width: 73%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#sponsor ul li {
+    float: left;
+    height: 100px;
+    width: calc(100% / 3 - 20px);
+    overflow: hidden;
+    list-style: none;
+    margin: 0 10px;
+}
+
+#sponsor li:first-child {
+    background-image: url(../immagini/apple.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#sponsor li:nth-child(2) {
+    background-image: url(../immagini/microsoft.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    background-position: center;
+}
+
+#sponsor li:last-child {
+    background-image: url(../immagini/logo-labfortraining.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* FINE SPONSOR */
+
+/* INIZIO FOOTER */
+
+footer {
+    clear: both;
+    background-color: #7d3158;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer .content li {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer .content a {
+    color: #f9cee0;
+    padding: 25px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+footer .content li:hover a {
+    color: #acd7a1;
+}
+
+/* FINE FOOTER */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1023px) {
+    
+    /* INIZIO NAV */
+
+    nav {
+        height: revert;
+        width: 100%;
+        position: fixed;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .fa-solid {
+        color: #7d3158;
+        font-size: 35px;
+        line-height: 60px;
+    }
+    
+    
+    nav>ul>li {
+        display: none;
+        position: static;
+        padding: 0;
+    }
+
+    nav li ul {
+        display: none;
+        position: static;
+    }    
+    
+    nav ul:hover li {
+        display: block;
+    }
+
+    /* FINE NAV */
+    /* INIZIO ARTICLE */
+
+    .articolo,
+    .articolo:last-of-type {
+        width: 90%;
+        padding: 50px 50px 120px 50px;
+    }
+
+    .articolo:first-of-type h2 {
+        font-size: 18px;
+        top: 0;
+        left: 50%;
+        right: unset;
+        transform: translate(-50% , -50%);
+        text-align: center;
+    }
+    
+    .articolo:last-of-type h2 {
+        font-size: 18px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+    }
+    
+    .articolo:first-of-type img {
+        width: 200px;
+        top: 100%;
+        left: 50%;
+    }
+
+    .articolo:last-of-type img {
+        width: 200px;
+        top: 100%;
+        right: 50%;
+    }
+    
+    .articolo p {
+        font-size: 18px;
+    }
+    
+    /* FINE ARTICLE */
+    /* INIZIO ASIDE */
+
+    #correlati h3 {
+        width: 20%;
+        font-size: 16px;
+    } 
+
+    #correlati li {
+        width: calc(100% / 2 - 20px);
+        margin: 10px;
+    }
+
+    #modulo div {
+        padding: 20px;
+    }
+
+    #correlati a {
+        height: 350px;
+        font-size: 11px;
+    }
+
+    /* FINE ASIDE */
+
+    /* INIZIO SPONSOR */
+
+    #sponsor {
+        height: auto;
+    }
+
+    #sponsor ul li {
+        width: calc(100% - 20px);
+        float: none;
+    }
+
+    /* FINE SPONSOR */
+    /* INIZIO FOOTER */
+
+    footer {
+        clear: none;;
+    }
+
+    /* FINE FOOTER */
+}
+
+@media screen and (max-width: 767px) {
+
+    /* INIZIO ASIDE */
+
+    #correlati li {
+        width: calc(100% - 20px);
+    }
+
+    /* FINE ASIDE */
+}
